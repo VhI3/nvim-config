@@ -1,8 +1,11 @@
 return require("packer").startup(function()
-    --  packer plugin manager
+    --  Packer plugin manager
     use("wbthomason/packer.nvim")
     -- Add Dracula theme
     use 'Mofiqul/dracula.nvim'
+    -- Add the vimtex to nvim
+    use {'lervag/vimtex', ft = 'tex', opt = true}
+    -- use("lervag/vimtex")
     -- use("Pocco81/TrueZen.nvim")
     -- use("kyazdani42/nvim-web-devicons") --> enable icons
     -- use("norcalli/nvim-colorizer.lua")
