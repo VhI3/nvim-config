@@ -1,9 +1,12 @@
 return require("packer").startup(function()
     --  Packer plugin manager
+    -- 1: The packer plugin. The corresponding config is stored in lua/packerconfig/init.lua
     use("wbthomason/packer.nvim")
     -- Add Dracula theme
+    -- 2: The dracula theme. The corresponding config is stored in lua/colors-config/dracula.lua
     use 'Mofiqul/dracula.nvim'
     -- Add the vimtex to nvim
+    -- 3: The vimtex_package. The corresponding config is stored in lua/vimtex-config/init.lua
     use {'lervag/vimtex', ft = 'tex', opt = true}
     -- use("Pocco81/TrueZen.nvim")
     -- use("kyazdani42/nvim-web-devicons") --> enable icons

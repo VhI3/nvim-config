@@ -32,6 +32,6 @@ set.cursorline = true
 
 -- vim.cmd("colorscheme nordfox")
 
-vim.g.vimtex_view_method = "zathura"
+-- vim.g.vimtex_view_method = "zathura"
 
 -- vim.notify = require("notify")

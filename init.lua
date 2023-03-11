@@ -11,8 +11,16 @@ end
 -- 
 -- 
 -- 
--- 
--- Add the packages to nvim
+--  Vim stand-alone options
+-- # 0
+require("nvim-config")
+-- Add the packages to neovim
+-- # 1
 require("packer-config")
+-- Add the color theme to neovim
+-- # 2
+-- vim.cmd[[colorscheme dracula]]
 require("colors-config.dracula")
-require("options")
+-- Vimtex config
+-- # 3 
+require("vimtex-config")

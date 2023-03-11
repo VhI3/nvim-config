@@ -1,3 +1,4 @@
+vim.cmd[[colorscheme dracula]]
 local dracula = require("dracula")
 dracula.setup({
   -- customize dracula color palette
