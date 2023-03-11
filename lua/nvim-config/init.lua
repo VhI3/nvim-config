@@ -1,5 +1,10 @@
 local set = vim.opt
 
+
+-- Set the leader key to the spacebar
+vim.api.nvim_set_var('mapleader', ' ')
+
+
 set.expandtab = true
 set.smarttab = true
 set.shiftwidth = 4
