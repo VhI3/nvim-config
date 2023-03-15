@@ -19,7 +19,6 @@ require("nvim-config")
 require("packer-config")
 -- Add the color theme to neovim
 -- # 2
--- vim.cmd[[colorscheme dracula]]
 require("colors-config.dracula")
 -- Vimtex config
 -- # 3 
