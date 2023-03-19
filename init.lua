@@ -15,9 +15,6 @@ local Plug = vim.fn['plug#']
 vim.call('plug#begin')
 --  vimtex package for LaTeX
 Plug 'lervag/vimtex'
--- Airline
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 vim.call('plug#end')
 
 
@@ -43,5 +40,5 @@ require("packer-config")
 require("colors-config.dracula")
 -- # 3: Vimtex config
 require("vimtex-config")
--- # 4: Vim-airline config
-require("vim-airline-config")
+-- # 4: Lualine config 
+require("lualine-config")
