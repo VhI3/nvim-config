@@ -6,8 +6,7 @@ return require("packer").startup(function()
     -- 2: The dracula theme. The corresponding config is stored in lua/colors-config/dracula.lua
     use 'Mofiqul/dracula.nvim'
     -- Add the vimtex to nvim
-    -- 3: The vimtex_package. The corresponding config is stored in lua/vimtex-config/init.lua
-    -- use {'lervag/vimtex', ft = 'tex', opt = true}
+    -- 4: Add a blazing fast and easy-to-configure Neovim status line written in Lu
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
