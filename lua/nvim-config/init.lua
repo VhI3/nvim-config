@@ -27,6 +27,7 @@ set.smartcase = true
 
 set.relativenumber = true
 set.cursorline = true
+set.clipboard=unnamedplus
 -- set.wildmenu = true
 -- set.completeopt = "menuone,noselect"
 

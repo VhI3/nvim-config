@@ -42,10 +42,13 @@ return require("packer").startup(function()
 
     -- use({ "nvim-neorg/neorg", run = ":Neorg sync-parsers" })
 
-    -- --> lsp
-    -- use({ "williamboman/mason.nvim" })
-    -- use("williamboman/mason-lspconfig.nvim")
-    -- use("neovim/nvim-lspconfig") --> Collection of configurations for built-in LSP client
+    --> lsp
+    -- Portable package manager for Neovim that runs everywhere Neovim runs. Easily install and manage LSP servers, DAP servers, linters, and formatters.
+    -- More info: https://medium.com/@alpha2phi/neovim-for-beginners-packer-manager-plugin-e4d84d4c3451
+    use({ "williamboman/mason.nvim" })
+    use("williamboman/mason-lspconfig.nvim")
+    use("neovim/nvim-lspconfig") --> Collection of configurations for built-in LSP client
+    use("jose-elias-alvarez/null-ls.nvim") 
     -- use("jose-elias-alvarez/null-ls.nvim") --> inject lsp diagnistocs, formattings, code actions, and more ...
     -- use("tami5/lspsaga.nvim") --> icons for LSP diagnostics
     -- use("onsails/lspkind-nvim") --> vscode-like pictograms for neovim lsp completion items
