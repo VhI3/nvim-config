@@ -44,20 +44,3 @@ require("vimtex-config")
 require("lualine-config")
 -- # 5:
 require("mason-config")
-
--- print(vim.fn.executable("latexindent"))
-local on_attach = function(client, bufnr)
-    -- ...
-    vim.keymap.set('n', '<space>f', function()
-        vim.lsp.buf.format({ async = true })
-    end, bufopts)
-    -- ...
-end
-require('null-ls').setup({
-    sources = {
-        -- ...
-        require('null-ls').builtins.formatting.latexindent.with({
-        }),
-        -- ...
-    }
-})
